@@ -8,9 +8,9 @@ This project is a simulation of an industrial pastry shop's order management sys
 
 The primary objective is to manage the flow of ingredients and customer orders according to specific rules defined by the prompt:
 
-  * [cite\_start]**FIFO Consumption**: Ingredients must be consumed from the batches with the **earliest expiry date** first[cite: 14].
-  * [cite\_start]**Wait List (FIFO)**: Orders that cannot be fulfilled immediately due to insufficient ingredients are placed on a wait list and processed in **chronological arrival order** when a new ingredient shipment arrives[cite: 15, 19].
-  * [cite\_start]**Courier Dispatch**: Ready orders are chosen for the courier in **chronological arrival order** up to the capacity limit[cite: 21, 22]. [cite\_start]Loaded orders are then printed, sorted by **decreasing weight**, and by **chronological arrival time** for ties[cite: 24, 25]. [cite\_start]The weight of a prepared item equals the sum of its ingredients' quantities[cite: 23].
+  * **FIFO Consumption**: Ingredients must be consumed from the batches with the **earliest expiry date** first[cite: 14].
+  * **Wait List (FIFO)**: Orders that cannot be fulfilled immediately due to insufficient ingredients are placed on a wait list and processed in **chronological arrival order** when a new ingredient shipment arrives[cite: 15, 19].
+  * **Courier Dispatch**: Ready orders are chosen for the courier in **chronological arrival order** up to the capacity limit[cite: 21, 22]. Loaded orders are then printed, sorted by **decreasing weight**, and by **chronological arrival time** for ties[cite: 24, 25]. The weight of a prepared item equals the sum of its ingredients' quantities[cite: 23].
 
 -----
 
@@ -55,7 +55,7 @@ The courier is checked at time $k \times n$ (where $n$ is the periodicity) befor
 (arrival_time) (recipe_name) (quantity)
 ```
 
-[cite\_start]If the truck is empty, it prints: `camioncino vuoto`[cite: 48, 49].
+If the truck is empty, it prints: `camioncino vuoto`[cite: 48, 49].
 
 -----
 
